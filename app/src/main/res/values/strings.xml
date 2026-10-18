@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اسکن‌مپ سازمانی</string>
+
+    <string name="nav_scan">اسکن</string>
+    <string name="nav_map">نقشه</string>
+    <string name="nav_files">پرونده‌ها</string>
+    <string name="nav_settings">تنظیمات</string>
+
+    <string name="cam_scanning">در حال اسکن</string>
+    <string name="cam_idle">آماده اسکن</string>
+    <string name="cta_start">شروع اسکن</string>
+    <string name="cta_pause">مکث اسکن</string>
+    <string name="cta_resume">ادامه اسکن</string>
+
+    <string name="mode_view">نمایش</string>
+    <string name="mode_walk">پیمایش</string>
+    <string name="mode_room">اتاق</string>
+    <string name="mode_wall">دیوار</string>
+    <string name="mode_ap">وای‌فای</string>
+
+    <string name="wall_rec">ضبط دیوار</string>
+    <string name="corner">ثبت گوشه</string>
+    <string name="tap_pos">تنظیم موقعیت با لمس</string>
+    <string name="room_close">بستن اتاق</string>
+    <string name="undo">لغو آخرین</string>
+    <string name="clear">پاک کردن</string>
+    <string name="wall_finish">اتمام دیوار</string>
+    <string name="ap_auto">ثبت خودکار APها</string>
+    <string name="on_l">روشن</string>
+    <string name="off_l">خاموش</string>
+
+    <string name="map_2d">نقشه 2D</string>
+    <string name="map_3d">مدل 3D</string>
+    <string name="ap_chip">APها</string>
+    <string name="export_chip">خروجی‌ها</string>
+
+    <string name="st_progress">پیشرفت فضا</string>
+    <string name="st_area">محوطه ثبت‌شده</string>
+    <string name="st_wifi">شبکه‌های وای‌فای</string>
+    <string name="st_path">مسیر ذخیره‌شده</string>
+    <string name="st_steps">گام</string>
+    <string name="st_head">جهت</string>
+    <string name="st_pos">موقعیت</string>
+    <string name="st_time">زمان اسکن</string>
+    <string name="status_paused">اسکن متوقف است</string>
+
+    <string name="menu_export">خروجی‌ها</string>
+    <string name="menu_floors">طبقات</string>
+    <string name="menu_help">راهنما</string>
+
+    <string name="settings_title">تنظیمات</string>
+    <string name="set_stride">طول قدم (سانتی‌متر)</string>
+    <string name="set_wall_h">ارتفاع دیوار (متر)</string>
+    <string name="set_wall_t">ضخامت دیوار (سانتی‌متر)</string>
+    <string name="set_tx">توان مرجع @1m (dBm)</string>
+    <string name="set_minrssi">حداقل RSSI کشف (dBm)</string>
+    <string name="set_target">مساحت هدف (m²)</string>
+    <string name="set_north">جبران قطب‌نما (درجه)</string>
+    <string name="set_save">ذخیره تنظیمات</string>
+    <string name="diag_title">عیب‌یابی سنسورها</string>
+
+    <string name="floors_title">مدیریت طبقات</string>
+    <string name="add_floor">افزودن طبقه</string>
+    <string name="rename">تغییر نام</string>
+    <string name="delete">حذف</string>
+    <string name="close">بستن</string>
+    <string name="ok">تأیید</string>
+    <string name="cancel">لغو</string>
+
+    <string name="projects_title">پرونده‌های ذخیره‌شده</string>
+    <string name="new_project">پروژه جدید</string>
+    <string name="export_json">خروجی JSON</string>
+    <string name="import_json">ورود JSON</string>
+    <string name="scan_new_floor">اسکن طبقه جدید</string>
+
+    <string name="export_title">خروجی‌ها</string>
+    <string name="exp_top">PNG نمای بالا (نقشه 2D)</string>
+    <string name="exp_persp">PNG مدل 3D (پرسپکتیو ۶۰ درجه)</string>
+    <string name="exp_cam">عکس فوری دوربین</string>
+    <string name="exp_obj">مدل سه‌بعدی OBJ (برای 3ds Max)</string>
+    <string name="exp_csv">CSV لیست APها</string>
+    <string name="exp_json">خروجی پروژه (JSON)</string>
+    <string name="export_note">OBJ بر حسب متر است و در 3ds Max از مسیر File → Import → Geometry وارد می‌شود. خروجی‌ها در محل انتخابی شما (Downloads و …) ذخیره می‌شوند.</string>
+
+    <string name="ap_title">جزئیات اکسس‌پوینت</string>
+    <string name="ap_list_title">شبکه‌های وای‌فای</string>
+    <string name="ap_none">هیچ شبکه‌ای کشف نشده است. مجوز موقعیت را بدهید و سرویس موقعیت دستگاه را روشن کنید.</string>
+    <string name="ap_move">جابه‌جایی با لمس بعدی روی نقشه</string>
+    <string name="ap_delete">حذف این AP</string>
+    <string name="ap_last">آخرین اندازه‌گیری</string>
+    <string name="ap_dist">فاصله تخمینی</string>
+    <string name="ap_conf">اطمینان موقعیت</string>
+    <string name="ap_samples">تعداد نمونه</string>
+
+    <string name="hint_view">حالت نمایش: کشیدن = جابه‌جایی، دو انگشت = بزرگ‌نمایی، لمس AP = جزئیات، نگه‌داشتن = حذف</string>
+    <string name="need_loc">برای اسکن وای‌فای، مجوز موقعیت لازم است و سرویس موقعیت دستگاه باید روشن باشد.</string>
+
+    <string name="saved">ذخیره شد</string>
+    <string name="imported">پروژه وارد شد</string>
+    <string name="cam_null">عکس دوربین در دسترس نیست</string>
+    <string name="floor_default">همکف</string>
+    <string name="floor_auto">طبقه</string>
+    <string name="room_default">اتاق</string>
+    <string name="project_default">پروژه جدید</string>
+    <string name="confirm_del">مطمئن هستید؟ این عمل بازگشت‌پذیر نیست.</string>
+
+    <string name="help_text">۱) مجوزهای دوربین و موقعیت را بدهید؛ برای اسکن وای‌فای، سرویس موقعیت (GPS) دستگاه باید روشن باشد.\n\n۲) در تنظیمات، طول قدم خود را وارد کنید (پیش‌فرض ۷۲ سانتی‌متر). برای دقت بیشتر، مسیر ۱۰ متری مشخصی را قدم بزنید و طول قدم را تنظیم کنید.\n\n۳) روی «شروع اسکن» بزنید، گوشی را صاف جلوی بدن بگیرید و در محیط راه بروید؛ مسیر و گام‌های شما ثبت می‌شود.\n\n۴) دیوارها: هنگام پیمایش «ضبط دیوار» را روشن کنید و در امتداد دیوارها راه بروید؛ در هر گوشه «ثبت گوشه» را بزنید و در پایان «اتمام دیوار». یا در حالت «اتاق» گوشه‌ها را روی نقشه لمس کنید و «بستن اتاق» را بزنید (مساحت خودکار محاسبه می‌شود). در حالت «دیوار» دیوار دلخواه بکشید.\n\n۵) انحراف: در مسیرهای طولانی اگر موقعیت شما جا ماند، «تنظیم موقعیت با لمس» را روشن و محل دقیق خود را روی نقشه لمس کنید.\n\n۶) وای‌فای: APها هنگام اسکن به‌صورت خودکار کشف می‌شوند؛ موقعیت هر AP از مجموعه نمونه‌های سیگنال (حداقل مربعات) تخمین زده می‌شود. رنگ پین نشان کیفیت سیگنال است: سبز عالی، فیروزه‌ای خوب، نارنجی متوسط، قرمز ضعیف.\n\n۷) خروجی‌ها: از تب نقشه → «خروجی‌ها»؛ PNG نقشه، PNG مدل 3D، عکس دوربین، OBJ برای 3ds Max، CSV لیست APها و JSON پروژه.\n\n۸) طبقه‌ها: هر طبقه نقشه و APهای خودش را دارد (از دکمه طبقه در بالای صفحه). پروژه‌ها به‌صورت خودکار ذخیره می‌شوند و در تب پرونده‌ها مدیریت می‌شوند.\n\nنکته: دقت مسافت به کالیبراسیون طول قدم و ثبات نگه‌داشتن گوشی بستگی دارد؛ برای محیط‌های بزرگ، چند مسیر متقاطع بپیمایید تا تخمین موقعیت APها دقیق‌تر شود.</string>
+</resources>
