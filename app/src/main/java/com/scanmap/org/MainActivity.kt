@@ -259,8 +259,8 @@ class MainActivity : AppCompatActivity(), SensorEngine.Listener, WifiEngine.List
 
         // mode chips
         val modes = listOf(TopView.Mode.VIEW, TopView.Mode.WALK, TopView.Mode.ROOM, TopView.Mode.WALL, TopView.Mode.AP)
-        chips.forEachIndexed { i, b -> b.setOnClickListener { setMode(modes[i]) } }
-        setMode(TopView.Mode.VIEW)
+        chips.forEachIndexed { i, b -> b.setOnClickListener { applyMode(modes[i]) } }
+        applyMode(TopView.Mode.VIEW)
         btnWallRec.text = getString(R.string.wall_rec) + ": " + getString(R.string.off_l)
         btnTapPos.text = getString(R.string.tap_pos) + ": " + getString(R.string.off_l)
         btnApAuto.text = getString(R.string.ap_auto) + ": " + getString(if (autoAp) R.string.on_l else R.string.off_l)
@@ -392,7 +392,7 @@ class MainActivity : AppCompatActivity(), SensorEngine.Listener, WifiEngine.List
     }
 
     // ── modes ────────────────────────────────────────────────
-    internal fun setMode(m: TopView.Mode) {
+    internal fun applyMode(m: TopView.Mode) {
         if ((mode == TopView.Mode.ROOM || mode == TopView.Mode.WALL) && m != mode) {
             topView.pendingPts.clear()
         }
