@@ -37,7 +37,7 @@ jobs:
           name: ScanMap-signed-apk
           path: ScanMap-v1.0-signed.apk
 
-      - name: Publish to release (tag: latest)
+      - name: "Publish to release (tag latest)"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
