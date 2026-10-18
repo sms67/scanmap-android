@@ -59,6 +59,7 @@
     <string name="set_north">جبران قطب‌نما (درجه)</string>
     <string name="set_save">ذخیره تنظیمات</string>
     <string name="diag_title">عیب‌یابی سنسورها</string>
+    <string name="help_title">راهنما</string>
 
     <string name="floors_title">مدیریت طبقات</string>
     <string name="add_floor">افزودن طبقه</string>

@@ -1018,7 +1018,7 @@ class MainActivity : AppCompatActivity(), SensorEngine.Listener, WifiEngine.List
         col.addView(makeCardTitle(p.name))
         val info = TextView(this)
         info.text = "طبقه‌ها: ${p.floors.size}   |   APها: ${p.floors.sumOf { it.aps.size }}   |   " +
-            "مسیر کل: ${GeoUtils.fmt0(p.floors.sumOf { GeoUtils.pathLength(it.path).toDouble() })} m"
+            "مسیر کل: ${GeoUtils.fmt0(p.floors.sumOf { GeoUtils.pathLength(it.path).toDouble() }.toFloat())} m"
         info.setTextColor(0xFF64748B.toInt())
         info.textSize = 12f
         info.setPadding(dp(4), dp(2), dp(4), dp(6))
@@ -1188,7 +1188,7 @@ class MainActivity : AppCompatActivity(), SensorEngine.Listener, WifiEngine.List
         help.textSize = 12f
         help.setBackgroundResource(R.drawable.bg_card)
         help.setPadding(dp(12), dp(10), dp(12), dp(12))
-        help.lineSpacingMultiplier = 1.25f
+        help.setLineSpacing(0f, 1.25f)
         col.addView(help)
 
         settingsContainer.addView(sc)

@@ -152,8 +152,8 @@ class PerspectiveView @JvmOverloads constructor(
         val pitch = Math.toRadians(pitchDeg.toDouble())
         val yawR = Math.toRadians(yaw.toDouble())
         val cp = cos(pitch).toFloat(); val spch = sin(pitch).toFloat()
-        cam.ex = tx + dist * cp * sin(yawR)
-        cam.ey = ty - dist * cp * cos(yawR)
+        cam.ex = tx + dist * cp * sin(yawR).toFloat()
+        cam.ey = ty - dist * cp * cos(yawR).toFloat()
         cam.ez = 1.2f + dist * spch
         var fx = tx - cam.ex; var fy = ty - cam.ey; var fz = 1.2f - cam.ez
         val flen = sqrt(fx * fx + fy * fy + fz * fz)

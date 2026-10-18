@@ -410,7 +410,7 @@ class UiDialogs(private val act: MainActivity) {
         tv.textSize = 13f
         tv.setTextColor(0xFF0F172A.toInt())
         tv.setPadding(dp(18), dp(10), dp(18), dp(8))
-        tv.lineSpacingMultiplier = 1.3f
+        tv.setLineSpacing(0f, 1.3f)
         val sc = ScrollView(act)
         sc.addView(tv)
         AlertDialog.Builder(act)
