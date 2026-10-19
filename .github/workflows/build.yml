@@ -28,14 +28,14 @@ jobs:
 
       - name: Rename APK
         run: |
-          cp app/build/outputs/apk/release/app-release.apk ScanMap-v1.0-signed.apk
-          ls -la ScanMap-v1.0-signed.apk
+          cp app/build/outputs/apk/release/app-release.apk ScanMap-v1.1-signed.apk
+          ls -la ScanMap-v1.1-signed.apk
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: ScanMap-signed-apk
-          path: ScanMap-v1.0-signed.apk
+          path: ScanMap-v1.1-signed.apk
 
       - name: "Publish to release (tag latest)"
         env:
@@ -45,4 +45,5 @@ jobs:
             gh release create latest --repo "$GITHUB_REPOSITORY" \
               --title "ScanMap — Signed APK (latest)" \
               --notes "نسخه امضاشده برای نصب مستقیم روی اندروید. Signed APK for direct installation."
-          gh release upload latest ScanMap-v1.0-signed.apk --repo "$GITHUB_REPOSITORY" --clobber
+          gh release upload latest ScanMap-v1.1-signed.apk --repo "$GITHUB_REPOSITORY" --clobber
+          gh release delete-asset latest ScanMap-v1.0-signed.apk --repo "$GITHUB_REPOSITORY" --yes 2>/dev/null || true
